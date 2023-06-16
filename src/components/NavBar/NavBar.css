@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100, 200, 300, 400, 500, 600, 700, bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merryweather';
+    src: url('../../assets/fonts/Merryweather/static') format('truetype');
+    font-weight: 100, 200, 300, 400, 500, 600, 700, bold;
+    font-style: normal;
+}
+
+.nav-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.name-box {
+    
+}
+
+.box-links {
+    display: flex;
+    gap: 40px;
+}
+.box-links a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Quicksand;
+    font-size: 18px;
+}
+.box-links a:hover{
+    color: orange;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.cart-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+.cart-button:hover{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.login-button{
+    width: 90px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: whitesmoke;
+    color: black;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.login-button:hover {
+    color: white;
+    background-color: orange;
+    transition: 0.4s;
+    cursor: pointer;
+}
