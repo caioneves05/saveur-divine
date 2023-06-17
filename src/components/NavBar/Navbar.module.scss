@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$primaryColor: orange;
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100, 200, 300, 400, 500, 600, 700, bold;
+    font-style: normal;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
+    .name {
+    
+    }
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+
+    .links, a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-family: Quicksand;
+        font-size: 18px;
+    }
+    .links, a:hover{
+        color: $primaryColor;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .cartButton{
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0);
+        color: $primaryColor;
+        border: none;
+    }
+    
+    .cartButton:hover{
+        transition: 0.5s;
+        color: rgb(255, 145, 0);
+        cursor: pointer;
+    }
+    
+    .loginButton{
+        width: 90px;
+        height: 40px;
+        border-radius: 30px;
+        border: none;
+        background-color: whitesmoke;
+        color: black;
+        font-family: Quicksand;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .loginButton:hover {
+        color: white;
+        background-color: $primaryColor;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+}

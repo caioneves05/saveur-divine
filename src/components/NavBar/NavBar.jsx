@@ -1,24 +1,23 @@
-import './NavBar.css'
+import style from './Navbar.module.scss'
 import { FaShoppingCart } from 'react-icons/fa'
 
-const NavBar = () => {
+const Navbar = () => {
    return(
-      <>
-      <nav className="nav-box">
-        <div className="name-box">
+      <nav className={style.nav}>
+        <div className={style.name}>
             <h1>Saveur</h1>
             <h2>Divine</h2>
         </div>
-        <div className="box-links">
+        
+        <div className={style.links}>
             <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
             <a href="http://" target="_blank" rel="noopener noreferrer">Menu</a>
             <a href="http://" target="_blank" rel="noopener noreferrer">Contact us</a>
-            <button className="cart-button"> < FaShoppingCart size={20} color="orange" /> </button>
-            <button className="login-button">Log in</button>
+            <button className={style.cartButton}> < FaShoppingCart size={27} /> </button>
+            <button className={style.loginButton}>Log in</button>
         </div>
       </nav>
-      </>
    ) 
 }
 
-export default NavBar
+export default Navbar
