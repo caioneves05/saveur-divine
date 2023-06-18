@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'SFpro';
+    src: url('../../assets/fonts/SFpro/SFPRODISPLAYREGULAR.OTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 .background {
     background-color: rgba(0, 0, 0, 0.900);
     position: fixed;
@@ -10,29 +21,89 @@
     right: 0;
     bottom: 0;
 
+    
     .modal {
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         gap: 20px;
         position: fixed;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         color: black;
-        padding: 4rem;
-        border-radius: 8px;
+        border-radius: 18px;
 
-        button {
-            color: black;
-            background-color: #E6E6E6;
-            border: none;
-            width: 150px;
-            height: 40px;
-            border-radius: 8px;
-        }
+        .apresentationModal{
 
-        button:hover {
-            background-color: #DADADA;
-            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .modalSvg{
+                width: 500px;
+                margin-bottom: 100px;
+            }
+                button {
+                    color: white;
+                    font-family: SFpro;
+                    font-size: 15px;
+                    background-color: #acacac;
+                    border: none;
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 8px;
+                }
+        
+                button:hover {
+                    background-color: #cccccc;
+                    cursor: pointer;
+                }
+            }
+
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(222, 222, 222);
+            gap: 15px;
+            padding: 60px;
+            border-radius: 20px;
+            margin-left: 60px;
+
+            input{
+                background-color: #F1F5F6;
+                color: #000000ba;
+                font-family: SFpro;
+                font-size: 15px;
+                padding: 20px;
+                text-decoration: none;
+                border: none;
+                outline: 0;
+                width: 340px;
+                height: 34px;
+                border-radius: 10px;
+            }
+
+            label{
+                color: #717171;
+            }
+
+            button {
+                color: white;
+                font-family: SFpro;
+                font-size: 15px;
+                background-color: #0173ff;
+                margin: auto;
+                border: none;
+                width: 150px;
+                height: 40px;
+                border-radius: 8px;
+            }
+    
+            button:hover {
+                background-color: #0069e9;
+                cursor: pointer;
+            }
         }
     }
 }

@@ -19,20 +19,21 @@
     justify-content: center;
     align-items: center;
 
+    
     .apresentation {
         position: relative;
 
         .imgBuble {
-            width: 800px;
-            height: 800px;
+            width: 750px;
+            height: 750px;
             margin-right: 8%;
         }
     
         .description{
             position: absolute;
             width: 450px;
-            left: 260px;
-            bottom: 340px;
+            left: 223px;
+            bottom: 320px;
         }
     
         .description h1 {
