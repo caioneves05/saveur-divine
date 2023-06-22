@@ -10,7 +10,7 @@ const Modal = ({ isOpen, actionName, setOpen }) => {
                     
                     <div className={style.apresentationModal}>
                         <img src={reservationSvg} alt="" className={style.modalSvg}/>
-                        <button onClick={() => setOpen(!isOpen)}>Close Modal</button>
+                        <button onClick={() => setOpen(!isOpen)}>Close</button>
                     </div>
 
                     <form action="" className={style.form}>

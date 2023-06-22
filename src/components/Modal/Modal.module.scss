@@ -28,7 +28,8 @@
         flex-direction: row;
         gap: 20px;
         position: fixed;
-        background-color: rgb(255, 255, 255);
+        background-color: #EFEFEF;
+        padding: 30px;
         color: black;
         border-radius: 18px;
 
@@ -64,9 +65,10 @@
         .form{
             display: flex;
             flex-direction: column;
+            background-color: white;
             border: 1px solid rgb(222, 222, 222);
             gap: 15px;
-            padding: 60px;
+            padding: 30px;
             border-radius: 20px;
             margin-left: 60px;
 
@@ -92,7 +94,7 @@
                 color: white;
                 font-family: SFpro;
                 font-size: 15px;
-                background-color: #0173ff;
+                background-color: #fdaa25;
                 margin: auto;
                 border: none;
                 width: 150px;
@@ -101,7 +103,7 @@
             }
     
             button:hover {
-                background-color: #0069e9;
+                background-color: #e99000;
                 cursor: pointer;
             }
         }
