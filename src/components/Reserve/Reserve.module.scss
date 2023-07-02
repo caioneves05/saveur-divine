@@ -10,7 +10,7 @@
 }
 
 .background {
-    background-color: rgba(0, 0, 0, 0.900);
+    background-color: rgba(0, 0, 0, 0.966);
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -71,9 +71,10 @@
             padding: 30px;
             border-radius: 20px;
             margin-left: 60px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
             input{
-                background-color: #F1F5F6;
+                background-color: #c3c3c3;
                 color: #000000ba;
                 font-family: SFpro;
                 font-size: 15px;

@@ -42,19 +42,13 @@ $primaryColor: orange;
         border: none;
     }
     
-    .cartButton:hover{
-        transition: 0.5s;
-        color: rgb(255, 145, 0);
-        cursor: pointer;
-    }
-    
     .loginButton{
         width: 90px;
         height: 40px;
         border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0);
         border: none;
-        background-color: whitesmoke;
-        color: black;
+        color: $primaryColor;
         font-family: Quicksand;
         font-size: 18px;
         font-weight: 700;
@@ -62,7 +56,6 @@ $primaryColor: orange;
     
     .loginButton:hover {
         color: white;
-        background-color: $primaryColor;
         transition: 0.4s;
         cursor: pointer;
     }

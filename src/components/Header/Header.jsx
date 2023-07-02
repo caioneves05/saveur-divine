@@ -1,6 +1,6 @@
 import style from './Header.module.scss'
 import svgBuble from '../../assets/images/blob.png'
-import Modal from '../Modal/Modal'
+import Reserve from '../Reserve/Reserve'
 import { useState, useEffect } from 'react'
 import { useSpring, animated } from '@react-spring/web'
 
@@ -32,8 +32,10 @@ const Header = () => {
                         <img src={svgBuble} alt="" className={style.imgBuble}/>
 
                         <div className={style.description}>
-                            <h1>Descubra o sabor do mundo inteiro com apenas um clique!</h1>
-                            <h2>Bem-vindo ao Saveur Divine, o destino gastronômico que irá transportar você para um mundo de delícias culinárias. Se você está em busca de uma experiência única e inesquecível, você encontrou o lugar certo!</h2>
+                            <h1>Discover the taste of the whole world with just one click!</h1>
+                            <h2>
+                                Welcome to Saveur Divine, the culinary destination that will transport you to a world of culinary delights. If you are looking for a unique and unforgettable experience, you have found the right place!
+                            </h2>
                         </div>
 
                     </div>
@@ -45,10 +47,10 @@ const Header = () => {
                             <h1>Du Monde</h1>
                         </div>
 
-                        <button onClick={() => setOpen(!open)}>Reservation</button>
+                        <button onClick={() => setOpen(!open)}><span>Reservation</span></button>
                     </div>
                 </header>
-                <Modal isOpen={open} actionName='reservation' setOpen={setOpen}/>
+                <Reserve isOpen={open} actionName='reservation' setOpen={setOpen}/>
             </animated.div>
         </>
     )

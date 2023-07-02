@@ -1,4 +1,4 @@
-import Carousel from "../components/Carousel/Carousel"
+import Menu from "../components/Menu/Menu"
 import Header from "../components/Header/Header"
 import Navbar from "../components/NavBar/navBar"
 
@@ -9,7 +9,7 @@ const HomePage = () => {
         <>
             <Navbar />
             <Header />
-            <Carousel />
+            <Menu />
         </>
     )
 }

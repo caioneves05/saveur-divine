@@ -1,7 +1,7 @@
+import Reserve from '../Reserve/Reserve'
 import style from './Navbar.module.scss'
-import { FaShoppingCart } from 'react-icons/fa'
 
-const Navbar = () => {
+const Navbar = ({ setOpen }) => {
    return(
       <nav className={style.nav}>
         <div className={style.name}>
@@ -10,12 +10,11 @@ const Navbar = () => {
         </div>
         
         <div className={style.links}>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
             <a href="http://" target="_blank" rel="noopener noreferrer">Menu</a>
             <a href="http://" target="_blank" rel="noopener noreferrer">Contact us</a>
-            <button className={style.cartButton}> < FaShoppingCart size={27} /> </button>
-            <button className={style.loginButton}>Log in</button>
+            <button className={style.loginButton} onClick={() => setOpen(!open)}>Log in</button>
         </div>
+        <Reserve />
       </nav>
    ) 
 }

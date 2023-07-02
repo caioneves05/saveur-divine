@@ -1,11 +1,11 @@
-import style from './Carousel.module.scss'
+import style from './Menu.module.scss'
 import img from '../../assets/images/logo.jpg'
 
-const Carousel = () => {
+const Menu = () => {
 
-    const menu = [
+    const items = [
         {
-            name: 'example',
+            name: 'Torta de frango',
             price: 36.99,
             description: 'example dffsdfsd example example',
             img: img
@@ -30,13 +30,14 @@ const Carousel = () => {
         }
     ]
 
-    const cardDish = menu.map((item, index) => (
+    const cardDish = items.map((item, index) => (
         <div key={index}>
             <div className={style.card}>
-                <h1>{item.name}</h1>
-                <img src={item.img} alt="" />
-                <p>{item.description}</p>
-                <button>Buy ${item.price}</button>
+                <div className={style.cardDetails}>
+                    <p className={style.textTitle}>Card title</p>
+                    <p className={style.textBody}>Here are the details of the card</p>
+                </div>
+                <button className={style.cardButton}>$ {item.price}</button>
             </div>
         </div>
     ))
@@ -48,4 +49,4 @@ const Carousel = () => {
     )
 }
 
-export default Carousel
+export default Menu
