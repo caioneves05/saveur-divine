@@ -1,32 +1,29 @@
 import style from './Menu.module.scss'
-import img from '../../assets/images/logo.jpg'
+import img from '../../assets/images/A.jpg'
 
 const Menu = () => {
 
     const items = [
         {
-            name: 'Torta de frango',
+            name: 'Croque-Monsieur',
             price: 36.99,
-            description: 'example dffsdfsd example example',
+            description: "It's a simple but delicious dish, usually served hot and au gratin in the oven.",
             img: img
         },
         {
-            name: 'example',
+            name: 'Quiche Lorraine',
             price: 340.99,
-            description: 'example fsfple example example',
-            img: img
+            description: 'A versatile option that can be served for breakfast, brunch or as a dinner entree.',
         },
         {
-            name: 'example',
+            name: 'Coq au Vin',
             price: 32.99,
-            description: 'example dsfsdfsd example example',
-            img: img
+            description: 'The chicken is cooked until tender and juicy, absorbing the rich flavors of the wine and other ingredients.',
         },
         {
-            name: 'example',
+            name: 'Crème Brûlée',
             price: 10.99,
-            description: 'example dsffsdfsd example example',
-            img: img
+            description: "It is served cold and is one of the most popular desserts in France.",
         }
     ]
 
@@ -34,8 +31,9 @@ const Menu = () => {
         <div key={index}>
             <div className={style.card}>
                 <div className={style.cardDetails}>
-                    <p className={style.textTitle}>Card title</p>
-                    <p className={style.textBody}>Here are the details of the card</p>
+                    <img src={item.img} alt="" className={style.imgCard}/>
+                    <p className={style.textTitle}>{item.name}</p>
+                    <p className={style.textBody}>{item.description}</p>
                 </div>
                 <button className={style.cardButton}>$ {item.price}</button>
             </div>

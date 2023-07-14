@@ -12,7 +12,7 @@
 
    .card {
     width: 220px;
-    height: 300px;
+    height: 360px;
     border-radius: 20px;
     background: #3d3d3d;
     position: relative;
@@ -31,6 +31,12 @@
     place-content: center;
     }
 
+    .imgCard {
+        width: 70%;
+        border-radius: 150%;
+        margin: auto;
+    }
+
     .cardButton {
     transform: translate(-50%, 125%);
     width: 60%;
@@ -46,19 +52,20 @@
     opacity: 0;
     transition: 0.3s ease-out;
     }
-
-    .textBody {
-    color: white;
-    }
-
-    /*Text*/
+    
     .textTitle {
     color: black;
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
+    }
+    .textBody {
+    color: white;
+    font-size: 15px;
+    text-align: left;
     }
 
-    /*Hover*/
+
     .card:hover {
     border-color: #4CAF50;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);

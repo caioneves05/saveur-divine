@@ -1,6 +1,6 @@
 import Menu from "../components/Menu/Menu"
 import Header from "../components/Header/Header"
-import Navbar from "../components/NavBar/navBar"
+import Navbar from "../components/NavBar/NavBar"
 
 
 

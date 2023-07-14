@@ -28,7 +28,7 @@
         flex-direction: row;
         gap: 20px;
         position: fixed;
-        background-color: #EFEFEF;
+        background-color: #FFFFFF;
         padding: 30px;
         color: black;
         border-radius: 18px;
@@ -53,6 +53,8 @@
                     width: 150px;
                     height: 40px;
                     border-radius: 8px;
+                    cursor: pointer;
+                    transition: 0.5s;
                 }
         
                 button:hover {
@@ -74,7 +76,7 @@
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
             input{
-                background-color: #c3c3c3;
+                background-color: #E5E5E5;
                 color: #000000ba;
                 font-family: SFpro;
                 font-size: 15px;
@@ -92,20 +94,18 @@
             }
 
             button {
-                color: white;
-                font-family: SFpro;
-                font-size: 15px;
-                background-color: #fdaa25;
+                width: 160px;
+                height: 35px;
                 margin: auto;
+                background-color: rgb(255, 103, 43);
                 border: none;
-                width: 150px;
-                height: 40px;
-                border-radius: 8px;
+                border-radius: 10px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             }
-    
             button:hover {
-                background-color: #e99000;
+                background-color: rgb(255, 72, 0);
                 cursor: pointer;
+                transition: 0.5s;
             }
         }
     }
