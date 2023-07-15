@@ -13,8 +13,8 @@ const Header = () => {
   
     const headerIn = useSpring({
         opacity: showContent ? 1 : 0,
-        marginTop: showContent ? 0 : -100,
-        delay: 340,
+        marginTop: showContent ? 0 : 100,
+        delay: 390,
 
     });
 

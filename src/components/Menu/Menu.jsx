@@ -1,29 +1,39 @@
 import style from './Menu.module.scss'
-import img from '../../assets/images/A.jpg'
+
+import imgCanard from '../../assets/images/confit-canard.jpg'
+import imgCassoulet from '../../assets/images/cassoulet.jpg'
+import imgRatatouille from '../../assets/images/ratatouille.jpg'
+import imgBullet from '../../assets/images/cremeBullet.jpg'
+import { useRef } from 'react'
 
 const Menu = () => {
 
+    const menuFieldRef = useRef(null)
+
     const items = [
         {
-            name: 'Croque-Monsieur',
-            price: 36.99,
-            description: "It's a simple but delicious dish, usually served hot and au gratin in the oven.",
-            img: img
+            name: 'Confit canard',
+            price: 36.49,
+            description: "Also known as duck confit, it originates from Gascony, in southwestern France.",
+            img: imgCanard
         },
         {
-            name: 'Quiche Lorraine',
-            price: 340.99,
-            description: 'A versatile option that can be served for breakfast, brunch or as a dinner entree.',
+            name: 'Cassoulet',
+            price: 54.99,
+            description: "Cassoulet is a multi-meat stew with white beans and is one of France's most popular foods.",
+            img: imgCassoulet
         },
         {
-            name: 'Coq au Vin',
-            price: 32.99,
-            description: 'The chicken is cooked until tender and juicy, absorbing the rich flavors of the wine and other ingredients.',
+            name: 'Ratatouille',
+            price: 25.99,
+            description: 'Popularized by the Disney movie and perfect for a romantic candlelit dinner',
+            img: imgRatatouille
         },
         {
             name: 'Crème Brûlée',
             price: 10.99,
-            description: "It is served cold and is one of the most popular desserts in France.",
+            description: "Dessert is nothing more than a sweet cream of eggs baked in a water bath.",
+            img: imgBullet
         }
     ]
 
@@ -31,8 +41,8 @@ const Menu = () => {
         <div key={index}>
             <div className={style.card}>
                 <div className={style.cardDetails}>
-                    <img src={item.img} alt="" className={style.imgCard}/>
                     <p className={style.textTitle}>{item.name}</p>
+                    <img src={item.img} alt="" className={style.imgCard}/>
                     <p className={style.textBody}>{item.description}</p>
                 </div>
                 <button className={style.cardButton}>$ {item.price}</button>
@@ -41,7 +51,7 @@ const Menu = () => {
     ))
 
     return(
-        <div className={style.container}>
+        <div className={style.container} ref={menuFieldRef} id="menuField">
             {cardDish}
         </div>
     )

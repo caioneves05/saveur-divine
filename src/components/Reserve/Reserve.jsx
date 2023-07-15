@@ -49,9 +49,9 @@ const Reserve = ({ isOpen, actionName, setOpen }) => {
                     </>
                 ) : (
                     <>
-                        <div>
+                        <div className={style.QRbox}>
+                            <h1>Scan your reserve!</h1>
                             <QRCode
-                            size={256}
                             style={{ height: "auto", maxWidth: "100%", width: "100%" }}
                             value={'Olá'}
                             viewBox={`0 0 256 256`}

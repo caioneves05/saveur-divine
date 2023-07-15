@@ -15,48 +15,55 @@ $primaryColor: orange;
 .nav {
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
+    align-items: center;
+    margin-top: 10px;
+
+    img{
+        width: 20%;
+    }
+
+    .links {
+        display: flex;
+        gap: 40px;
+    
+        .links, a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-family: Quicksand;
+            font-size: 18px;
+        }
+        .links, a:hover{
+            color: $primaryColor;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+        .cartButton{
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0);
+            color: $primaryColor;
+            border: none;
+        }
+        
+        .loginButton{
+            width: 90px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            color: $primaryColor;
+            font-family: Quicksand;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .loginButton:hover {
+            color: white;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+    }
 }
 
-.links {
-    display: flex;
-    gap: 40px;
 
-    .links, a {
-        text-decoration: none;
-        color: whitesmoke;
-        font-family: Quicksand;
-        font-size: 18px;
-    }
-    .links, a:hover{
-        color: $primaryColor;
-        transition: 0.4s;
-        cursor: pointer;
-    }
-    .cartButton{
-        width: 40px;
-        height: 40px;
-        border-radius: 30px;
-        background-color: rgba(0, 0, 0, 0);
-        color: $primaryColor;
-        border: none;
-    }
-    
-    .loginButton{
-        width: 90px;
-        height: 40px;
-        border-radius: 30px;
-        background-color: rgba(0, 0, 0, 0);
-        border: none;
-        color: $primaryColor;
-        font-family: Quicksand;
-        font-size: 18px;
-        font-weight: 700;
-    }
-    
-    .loginButton:hover {
-        color: white;
-        transition: 0.4s;
-        cursor: pointer;
-    }
-}
