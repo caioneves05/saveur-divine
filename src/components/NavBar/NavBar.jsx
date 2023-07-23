@@ -1,9 +1,8 @@
-import Reserve from '../Reserve/Reserve'
 import style from './Navbar.module.scss'
 import logoSaveur from '../../assets/images/Saveur.png'
 import { Link } from 'react-scroll'
 
-const Navbar = ({ setOpen }) => {
+const Navbar = () => {
 
   const handleMenuClick = () => {
     const menuField = document.getElementById('menuField')
@@ -11,6 +10,7 @@ const Navbar = ({ setOpen }) => {
   }
 
    return(
+    <>
       <nav className={style.nav}>
         <div className={style.name}>
             <img src={logoSaveur} alt="Logo" />
@@ -26,10 +26,10 @@ const Navbar = ({ setOpen }) => {
             offset={-70}
             >Menu</Link>
             <a href="http://" target="_blank" rel="noopener noreferrer">Contact us</a>
-            <button className={style.loginButton} onClick={() => setOpen(!open)}>Log in</button>
+            <button className={style.loginButton}>Log in</button>
         </div>
-        <Reserve />
       </nav>
+    </>
    ) 
 }
 

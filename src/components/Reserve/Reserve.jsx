@@ -5,7 +5,7 @@ import QRCode from 'react-qr-code'
 import { useState } from 'react'
 
 
-const Reserve = ({ isOpen, actionName, setOpen }) => {
+const Reserve = ({ isOpen, setOpen }) => {
 
     const [QRcode, setQRcode] = useState()
     const { register, handleSubmit } = useForm()
@@ -15,7 +15,7 @@ const Reserve = ({ isOpen, actionName, setOpen }) => {
         console.log(e)
     }
 
-    if(isOpen && actionName === 'reservation') {
+    if(isOpen) {
         return(
             <div className={style.background}>
                 <div className={style.modal}>
@@ -30,7 +30,7 @@ const Reserve = ({ isOpen, actionName, setOpen }) => {
                             }}>Close</button>
                         </div>
                         <form action="" className={style.form} onSubmit={handleSubmit(submitForm)}>
-                            <h2>Make your {actionName} right now!</h2>
+                            <h2>Make your Reservation right now!</h2>
 
                             <label htmlFor="">Email</label>
                             <input type="email" {...register('email')} placeholder='you@example.com'/>

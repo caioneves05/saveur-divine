@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'SFpro';
+    src: url('../../assets/fonts/SFpro/SFPRODISPLAYREGULAR.OTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .box {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 40px;
+        position: fixed;
+        background-color: #FFFFFF;
+        padding: 30px;
+        color: #555555;
+        border-radius: 18px;
+
+        .login{
+            width: 540px;
+            height: 700px;
+            border-radius: 18px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    text-align: center;
+                    margin: 27px;
+                }
+                p {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+
+                input{
+                    background-color: #E5E5E5;
+                    color: #000000ba;
+                    font-family: SFpro;
+                    font-size: 15px;
+                    padding: 20px;
+                    text-decoration: none;
+                    border: none;
+                    outline: 0;
+                    width: 340px;
+                    height: 10px;
+                    border-radius: 10px;
+                    margin: auto;
+                    margin-bottom: 30px;
+                }
+    
+                label{
+                    margin-left: 100px;
+                    color: #717171;
+                }
+
+                button {
+                    width: 340px;
+                    height: 40px;
+                    margin: auto;
+                    background-color: rgb(253, 91, 28);
+                    border: none;
+                    border-radius: 10px;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                }
+                button:hover {
+                    background-color: rgb(247, 128, 81);
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+        .apresentation {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(253, 91, 28);
+            width: 540px;
+            height: 700px;
+            border-radius: 18px;
+            color: white;
+
+            h1 {
+                font-size: 27px;
+                text-align: center;
+            }
+        }
+    }
+}
