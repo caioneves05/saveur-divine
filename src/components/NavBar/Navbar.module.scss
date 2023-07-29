@@ -45,24 +45,6 @@ $primaryColor: orange;
             color: $primaryColor;
             border: none;
         }
-        
-        .loginButton{
-            width: 90px;
-            height: 40px;
-            border-radius: 30px;
-            background-color: rgba(0, 0, 0, 0);
-            border: none;
-            color: $primaryColor;
-            font-family: Quicksand;
-            font-size: 18px;
-            font-weight: 700;
-        }
-        
-        .loginButton:hover {
-            color: white;
-            transition: 0.4s;
-            cursor: pointer;
-        }
     }
 }
 

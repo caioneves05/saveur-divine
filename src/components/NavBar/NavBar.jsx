@@ -26,7 +26,6 @@ const Navbar = () => {
             offset={-70}
             >Menu</Link>
             <a href="http://" target="_blank" rel="noopener noreferrer">Contact us</a>
-            <button className={style.loginButton}>Log in</button>
         </div>
       </nav>
     </>
