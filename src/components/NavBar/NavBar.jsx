@@ -17,7 +17,7 @@ const Navbar = () => {
         </div>
         
         <div className={style.links}>
-            <Link 
+            <Link
             href="#menuField" 
             rel="noopener noreferrer" 
             onClick={handleMenuClick}
@@ -25,7 +25,7 @@ const Navbar = () => {
             duration={500}
             offset={-70}
             >Menu</Link>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Contact us</a>
+            <a href="http://">Contact us</a>
         </div>
       </nav>
     </>

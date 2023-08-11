@@ -12,15 +12,16 @@ import * as yup from 'yup'
 const Reserve = ({ isOpen, setOpen }) => {
 
     const [QRcode, setQRcode] = useState()
+    const [haveReservation, setHaveReservation] = useState(false)
 
     const schema = yup.object({
         email: yup
           .string()
           .email('Invalid Email')
           .required('This  Email is required'),
-        password: yup
+          codeReserve: yup
           .string()
-          .min(8,'This field is required min 8 characters')
+          .min(8,'This Reservation Code field is required min 8 characters')
           .required('This field is required'),
         date: yup
           .string()
@@ -51,7 +52,7 @@ const Reserve = ({ isOpen, setOpen }) => {
             <div className={style.background}>
                 <div className={style.modal}>
                     
-                {!QRcode ? (
+                {!QRcode && !haveReservation ? (
                     <>
                         <div className={style.apresentationModal}>
                             <img src={reservationSvg} alt="" className={style.modalSvg}/>
@@ -74,16 +75,18 @@ const Reserve = ({ isOpen, setOpen }) => {
 
                             <span className={style.boxValidationErros}>{errors?.email?.message}</span>
 
-                            <label>Password</label>
+                            <label>Reservation code</label>
                             <input
-                            id='password'
-                            type='password'
-                            name='password' 
-                            {...register('password')}
+                            id='codeReserve'
+                            type='codeReserve'
+                            name='codeReserve' 
+                            {...register('codeReserve')}
                             placeholder='********'
                             />
+                            
+                            <p className={style.paraph}>Choose the code of your choice to secure your reservation</p>
 
-                            <span className={style.boxValidationErros}>{errors?.password?.message}</span>
+                            <span className={style.boxValidationErros}>{errors?.codeReserve?.message}</span>
 
                             <label>Date</label>
                             <input
@@ -109,6 +112,8 @@ const Reserve = ({ isOpen, setOpen }) => {
                             <button onClick={() =>  {
                             if(isValid) {
                                 setQRcode(true)
+                                setHaveReservation(true)
+                                console.log(haveReservation)
                             }
                             }} value={QRcode}>Reserve</button>
                            { /*  */}
