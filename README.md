@@ -27,7 +27,7 @@ Se você estiver curioso e esta for a sua primeira reserva em nosso restaurante,
 
 ## ⚠️ Atenção
 
-Esta aplicação ainda está em desenvolvimento, por isso estará disponível abaixo uma lista das funcionalidades e atualizações restante para a finalização do desenvolvimento.
+Esta aplicação ainda está em desenvolvimento, por isso estará disponível abaixo uma lista das funcionalidades e atualizações restantes para a finalização do desenvolvimento.
 
 - [ ] Implementar a lista e os métodos de seleção de mesas.
 - [ ] Certificar de que todas as telas e componentes estejam responsivos.
